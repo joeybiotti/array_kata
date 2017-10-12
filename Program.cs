@@ -8,7 +8,12 @@ namespace arrays
         {
            double [] nums = {1.25, 1241.53, 5.44, 90.21, 6.51};
 
-           Console.WriteLine(nums[2]);
+           foreach(double num in nums)
+           {
+               Console.Write("{0} ", num.ToString("N2"));
+           }
+
+           Console.WriteLine();
 
            Console.ReadLine();
         } 
